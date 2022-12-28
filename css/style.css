@@ -198,17 +198,17 @@ nav > ul > li {
   display: inline-block;
 }
 
-nav > ul > li a {
+nav > ul > li > a {
   color: #8794ba;
   text-align: center;
   display: inline-block;
 }
 
-nav > ul > li:hover {
+nav > ul > li > a:hover {
   color: #ef2a82;
 }
 
-nav > ul > li:active {
+nav > ul > li > a:active {
   position: relative;
   top: 1px;
 }
@@ -709,7 +709,7 @@ nav > ul > li:active {
   margin-top: 16px;
 }
 
-.form__auth-btn {
+.form_sending {
   padding-left: 105px;
   padding-right: 104px;
   line-height: 48px;
@@ -724,7 +724,7 @@ nav > ul > li:active {
   transition: background 0.3s ease-in;
 }
 
-.form__auth-btn:hover {
+.form_sending:hover {
   background: #ef2a82;
 }
 
@@ -756,11 +756,13 @@ nav > ul > li:active {
 }
 
 .rating-area {
-  width: 265px;
+  width: 100%;
   margin-bottom: 16px;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
 }
+
 .rating-area:not(:checked) > input {
   display: none;
 }
