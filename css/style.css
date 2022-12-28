@@ -340,6 +340,7 @@ nav > ul > li:active {
 .main {
   padding-left: 110px;
   padding-right: 110px;
+  max-width: 1180px;
 }
 
 .features {
